@@ -1,0 +1,7 @@
+<h1>Parent Component</h1>
+<div class="child-container" *ngIf="isVisible; else message">
+    <app-child></app-child>
+</div>
+<ng-template #message>
+    <h3>Child is not available</h3>
+</ng-template>

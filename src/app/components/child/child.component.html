@@ -1,0 +1,25 @@
+<div class="child">
+    <h2>Child Component</h2>
+    <div [ngClass]="formClass">
+        <form [formGroup]="formGroup" (submit)="onSubmit()">
+            <label>
+                Name
+                <input type="text" formControlName="name" >
+            </label>
+            <label for="Password">
+                Password
+                <input [type]=" showPassword ? 'text' : 'password' " formControlName="password" >
+                <label>
+                    <button type="button" (click)="togglePasswordVisibility()"> {{showPassword ? 'Hide' : 'Show'}} </button>
+                </label>
+            </label>
+            <label for="Terms">
+                Terms
+                <input type="checkbox" formControlName="terms" >
+            </label>
+
+            <input type="submit">
+
+        </form>
+    </div>
+</div>

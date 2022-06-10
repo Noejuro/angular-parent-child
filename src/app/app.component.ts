@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'parentchild';
+  text: string = 'Hide Child';
+  childState: boolean = true;
+
+  onClick() {
+    this.childState = !this.childState;
+    this.text = this.childState ? 'Hide Child' : 'Show Child'
+  }
 }

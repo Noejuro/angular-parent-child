@@ -1,0 +1,23 @@
+.child {
+    background-color: #EE99EE;
+
+    .form-container {    
+        border: 1px solid blue;
+        margin: 10px;
+        width: 500px;
+        height: 200px;
+    }
+
+    .form-container-error {  
+        background-color: red;  
+        border: 1px solid red;
+        margin: 10px;
+        width: 500px;
+        height: 200px;
+    }
+
+}
+
+form {
+    display: grid;
+}
